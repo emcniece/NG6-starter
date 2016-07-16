@@ -1,8 +1,11 @@
-<nav class="navbar">
-  <div class="logo">
-    <h1><a ui-sref="home">{{ $ctrl.name }}</a></h1>
+<md-toolbar>
+  <div class="md-toolbar-tools">
+    <md-button class="menu-btn md-icon-button"
+                ng-click="$ctrl.openLeftMenu()"
+                aria-label="open menu">
+      <ng-md-icon icon="menu"></ng-md-icon>
+    </md-button>
+
+    <h1>NG6 Starter with Angular Material</h1>
   </div>
-  <div class="nav-links">
-    <span><a ui-sref="about">about</a></span>
-  </div>
-</nav>
+</md-toolbar>

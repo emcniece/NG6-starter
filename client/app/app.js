@@ -3,10 +3,16 @@ import uiRouter from 'angular-ui-router';
 import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
-import 'normalize.css';
+
+import ngMaterial from 'angular-material';
+import 'angular-material/angular-material.css';
+import ngMdIcons from 'angular-material-icons';
+import 'angular-material-icons/angular-material-icons.css';
 
 angular.module('app', [
     uiRouter,
+    ngMaterial,
+    ngMdIcons,
     Common,
     Components
   ])
